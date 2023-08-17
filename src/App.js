@@ -1,11 +1,19 @@
-import './StyleSheet/App.css';
+// COMPONENT'S
+import Buttons from "./Components/Buttons";
+import Window from "./Components/Window";
 
-function App() {
+// STYLESHEET'S
+import "./StyleSheet/App.css";
+
+const App = () => {
   return (
     <div className="App">
-      app
+      <div className="conteiner-calculator">
+        <Window />
+        <Buttons />
+      </div>
     </div>
   );
-}
+};
 
 export default App;
